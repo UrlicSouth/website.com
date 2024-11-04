@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Two</title>
+    <link rel="stylesheet" href="/navbar.css" />
+</head>
+<body>
+    <h3>index page</h3>
+    <p></p>
+    <a href="page two.html">Page two</a>
+<nav>
+        <ul>
+            <li><a href="index.html"></a></li>
+            <li><a href="website.html"></a></li>
+        </ul>
+    </nav>
+    <h2>Student Details Form</h2>
+    <form name="studentDetail" method="POST" action="submit_form.php">
+        </form>
+    <form action="/submit_form" method="post">
+        <fieldset style="width: 50px;">
+         <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Submit</button>
+        </fieldset>
+    
+    </form>
+    <form action="/submit_form" method="post">
+        
+        </fieldset>
+        <p></p>
+    <a href="index.html"></a>
+    <script>
+        const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('input', function () {
+           this.value = this.value.replace(/\D/g, '');
+        });
+    </script>
+     <script>
+        function submitDetails() {
+            alert("Detail submitted");
+        }
+    </script>
+</body>
+</html>
